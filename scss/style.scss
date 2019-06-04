@@ -1,0 +1,20 @@
+@import './Libraries/bootstrap.scss';
+
+@import './Modules/variable.scss';
+
+@import './Partials/reset.scss';
+
+@import './Partials/fonts.scss';
+
+@import './Modules/base.scss';
+
+@import './Modules/mixins.scss';
+
+@import './Modules/functions.scss';
+
+
+
+@import './Components/components--import.scss';
+
+
+@import 'pages/pages--import.scss';

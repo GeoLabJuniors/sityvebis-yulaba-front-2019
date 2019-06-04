@@ -1,0 +1,25 @@
+{
+  "name": "sityvebis-yulaba",
+  "version": "1.0.0",
+  "description": "სიტყვების ყულაბის ფრონტი",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoLabJuniors/sityvebis-yulaba-front-2019.git"
+  },
+  "author": "jeko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeoLabJuniors/sityvebis-yulaba-front-2019/issues"
+  },
+  "homepage": "https://github.com/GeoLabJuniors/sityvebis-yulaba-front-2019#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

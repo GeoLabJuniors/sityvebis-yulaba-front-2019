@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>სიტყვების ყულაბა</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container flex justify-between align-items h-100">
+            <div class="logo__container"><a class="logo" href="#">ყულაბა</a></div>
+
+            <div class="header__left__right header__middle flex">
+                <a class="about__project" href="#">პროექტის შესახებ</a>
+                <a class="add__word flex align-items" href="#">დაამატე სიტყვა <img class="plus__icon" src="images/plus-icon.png" alt="plus"></a>
+            </div>
+
+            <div class="header__left__right header__right flex align-items cursor-pointer h-100">
+                <img id="not__login" class="open__popup" data-popup="login__and__register" src="images/not-login.png" alt="not login">
+
+                <!-- <div class="user__is__login relative h-100">
+                    <div class="user flex align-items">
+                        <div class="user__img" style="background-image: url('images/user-photo.png')"></div>
+                        <h5 class="user__title">ანა შაკაია</h5>
+                        <img class="polygon__img" src="images/Polygon.png" alt="Polygon">
+                    </div>
+
+                    <div class="header__dropdown">
+                        <ul>
+                            <li><a href="#">რედაქტირება</a></li>
+                            <li><a href="#">ჩემი სიტყვები</a></li>
+                            <li><a href="#">გამოსვლა</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="word__wrapper">
+        <div class="word__container">
+            <div class="row">
+
+                <!-- left -->
+                <div class="col-lg-8 word__left">
+                    <div class="form-group">
+                        <input class="form-control my__box__shadow" type="text" placeholder="ჩაწერეთ საძიებო სიტყვა">
+                        <img class="search__icon" src="images/search-icon.png" alt="search">
+                    </div>
+
+                    <div class="about_word">
+
+                        <!-- onError -->        
+                        <div class="error__word">
+                            <span>სამწუხაროდ  “სიტყვა” ვერ მოიძებნა</span>
+                            <button class="btn-danger flex">დაამატე სიტყვა <img class="plus__icon" src="images/plus-icon.png" alt="plus"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- right -->
+                <div class="col-lg-4 word__right">
+                    <div class="word__filter my__box__shadow" id="word__filter">
+                        <span>სიტყვების დალაგება</span>
+                    </div>
+
+                    <div class="filter__dropdown" id="filter__dropdown">
+                          <form action="#">
+                                <div class="filter__dropdown-container">
+                                    <div class="radio">
+                                        <input id="radio-1" name="radio" type="radio" checked>
+                                        <label for="radio-1" class="radio-label">თარიღის მიხედვით</label>
+                                    </div>
+                                    
+                                    <div class="radio">
+                                        <input id="radio-2" name="radio" type="radio">
+                                        <label  for="radio-2" class="radio-label">ანბანის მიხედვით</label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <input id="radio-3" name="radio" type="radio">
+                                        <label  for="radio-3" class="radio-label"><span>შემთხვევითობის პრინციპით</span></label>
+                                    </div>
+
+                                </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container flex justify-between align-items h-100">
+            <div class="footer__left flex justify-center column align-items">
+                <img src="images/handphone.png" alt="handphone">
+                <span class="footer__text">0322222222</span>
+            </div>
+
+            <div class="social__icons footer__left flex">
+                <img class="cursor-pointer" src="images/twitter.png" alt="twitter">
+                <img class="cursor-pointer" src="images/facebook.png" alt="facebook">
+                <img class="cursor-pointer" src="images/instagram.png" alt="instagram">
+            </div>
+
+            <div class="footer__left flex justify-center column align-items">
+                <img src="images/envelope.png" alt="envelope">
+                <span class="footer__text">yulaba@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- popup -->
+    <div class="popup__container popup__close" data-popup="login__and__register">
+        <div class="popup login__popup">
+            <div class="popup__title">
+                <a class="popup__title-child tablink active" href="#tab1">შესვლა</a>
+                <span style="font-size: 22px">/</span>
+                <a class="popup__title-child tablink" href="#tab2">რეგისტრაცია</a>
+            </div>
+
+            <div id="tab1" class="myform first__form active">
+                <form class="login__form" action="#">
+                    <div class="form-group flex align-items">
+                        <label>Email:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="form-group flex align-items">
+                        <label>პაროლი:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="popup__bottom flex justify-between">
+                        <a href="#">დაგავიწყდა ?</a>
+
+                        <button type="submit" class="btn-danger">შესვლა</button>
+                    </div>
+                </form>
+
+                <div class="fb-auth flex justify-center">
+                    <div class="facebook__login">
+                            <span>Facebook-ით შესვლა</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="myform second__form">
+                <form class="register__form" action="#">
+                    <div class="form-group flex align-items">
+                        <label>Email:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="form-group flex align-items">
+                        <label>სახელი:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="form-group flex align-items">
+                        <label>გვარი:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="form-group flex align-items">
+                        <label>პაროლი:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="form-group flex align-items">
+                        <label>გაიმეორეთ პაროლი:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="popup__bottom flex flex-end">    
+                        <button type="submit" class="btn-danger">რეგისტრაცია</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- popup -->
+    <div class="popup__container popup__close" data-popup="reset__pass">
+        <div class="popup reset__popup">
+            <div class="popup__title">
+                <h5 class="popup__title-child">პაროლის აღდგენა</h5>
+            </div>
+
+            <div class="first__form">
+                <p class="reset__popup-p">პაროლის აღსადგენად მიუთითეთ თქვენი ელ. ფოსტის მისამართი და დააწკაპუნეთ ღილაკზე „გაგზავნა“. რამდენიმე წუთში ელფოსტაზე მიიღებთ ახალი პაროლის გენერაციის ბმულს, რომლითაც აღადგენთ პაროლს და შეხვალთ სისტემაში</p>
+                
+                <form class="login__form" action="#">
+                    <div class="form-group flex align-items flex-end">
+                        <label>Email:</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="popup__bottom flex flex-end">
+                        <button type="submit" class="btn-danger">გაგზავნა</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

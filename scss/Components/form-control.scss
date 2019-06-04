@@ -1,0 +1,12 @@
+.form-control {
+    border-radius: 12px !important;
+    border: 1px solid $color-blue;
+    height: 32px;
+    width: 100%;
+   
+    &:focus {
+        border: 1px solid $color-red;
+        outline: none;
+        box-shadow: none;
+    }
+}

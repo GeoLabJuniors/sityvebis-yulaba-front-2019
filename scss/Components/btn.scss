@@ -1,0 +1,17 @@
+.btn-danger {
+    background: $color-red;
+    border-radius: 8px;
+    padding: 3px 17px;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 14px;
+    font-family: $bpg-nino-mtavruli;
+
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:focus {
+        outline: none;
+        border: 0;
+        box-shadow: none !important;
+    }
+}
