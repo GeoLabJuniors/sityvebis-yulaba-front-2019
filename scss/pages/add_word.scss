@@ -7,6 +7,10 @@
         position: relative;
     }
 
+    .form-control:hover {
+        box-shadow: 0px 0px 10px 0px rgba(199, 71, 71, 0.3);
+    }
+
     .my__box__shadow {
         height: 44px;
         border-radius: 12px;
@@ -121,11 +125,12 @@
                 &-text {
                     font-size: 14px;
                     font-family: $arial-geo;
+                    
+                   span:not(.example):hover {
+                        color: $color-red;
+                        cursor: pointer;
+                    }
                 }
-            }
-
-            .main--correct-word {
-                color: $color-red;
             }
 
             .correct--main-word  {
