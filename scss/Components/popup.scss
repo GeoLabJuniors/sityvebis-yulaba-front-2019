@@ -16,7 +16,7 @@
 
     .popup {
         width: 535px;
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -59,9 +59,31 @@
             display: block;
         }
 
+        .error {
+            color: $color-red;
+            font-size: 16px;
+            font-family: $arial-geo;
+            position: relative;
+            padding-left: 10px;
+            margin-top: 10px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: $color-red;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+            }
+        }
+
         .form-control {
             padding-left: 14px;
         }
+
 
         .form-group {
             margin-bottom: 11px;
@@ -126,11 +148,32 @@
 
         &-p {
             font-family: $arial-geo;
-            margin-top: 63px;
+            margin-top: 60px;
             margin-bottom: 30px;
             text-align: left;
             line-height: 24px;
             font-size: 16px;
+        }
+
+        .error {
+            color: $color-red;
+            font-size: 16px;
+            font-family: $arial-geo;
+            position: relative;
+            padding-left: 10px;
+            margin-top: 10px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: $color-red;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+            }
         }
     }
 

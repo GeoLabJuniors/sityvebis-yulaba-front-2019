@@ -64,6 +64,100 @@
         }
     }
 
+
+    // success
+    .correct__word {
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px 0px rgba(84,109,120,0.3);
+        padding: 12px 16px 23px 26px;
+        margin-bottom: 11px;
+
+        &-title {
+            color: $color-red;
+            font-family: $arial-geo;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        &-top {
+            @include flex($justify: space-between, $align: flex-start);
+            border-bottom: 1px solid rgba(84, 109, 120, 0.3);
+            padding-bottom: 7px;
+
+            .share__on__fb {
+                box-shadow: 0px 0px 10px 0px rgba(199, 71, 71, 0.3);
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+    
+                    &:nth-child(2){
+                        width: 5px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        &-middle {
+            margin-top: 11px;
+            margin-bottom: 22px;
+
+            .correct--word {
+                margin-bottom: 5px;
+
+                &-num {
+                    border: 1px solid $color-red;
+                    border-radius: 8px;
+                    display: inline-block;
+                    font-size: 13px;
+                    width: 26px;
+                    height: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    font-family: $arial-geo;
+                }
+            }
+
+            .main--correct-word {
+                color: $color-red;
+            }
+
+            .correct--main-word  {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-bottom {
+            @include flex($justify: space-between);
+
+            .word__button {
+                font-family: $arial-geo;
+                box-shadow: 0px 0px 10px 0px rgba(84,109,120,0.3);
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .word__button {
+            font-size: 10px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+
+
+    }
+
     // right
     .word__right {
         padding-right: 34px;
