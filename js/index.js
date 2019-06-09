@@ -45,7 +45,7 @@ document.getElementById('word__filter').addEventListener('click', () => {
 
 
 
-	// store tabs variable
+    // store tabs variable
     var myTabs = document.querySelectorAll(".tablink");
     
     function myTabClicks(tabClickEvent) {
@@ -70,3 +70,20 @@ document.getElementById('word__filter').addEventListener('click', () => {
         for (i = 0; i < myTabs.length; i++) {
             myTabs[i].addEventListener("click", myTabClicks)
         }
+
+
+
+
+
+        
+        let resetPass = document.getElementById('forgetPass');
+
+        resetPass.addEventListener('click', () => {
+            document.querySelectorAll('.popup').forEach(popup => {
+                popup.parentElement.classList.remove('active');
+
+                if(popup.getAttribute('data-id') === resetPass.getAttribute('data-id')){
+                    popup.parentElement.classList.add('active');
+                }
+            }); 
+        });
