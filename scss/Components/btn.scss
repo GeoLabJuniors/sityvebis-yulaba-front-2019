@@ -11,7 +11,8 @@
     &:not(:disabled):not(.disabled):active:focus,
     &:focus {
         outline: none;
-        border: 0;
+        border: 1px solid transparent;
         box-shadow: none !important;
     }
 }
+

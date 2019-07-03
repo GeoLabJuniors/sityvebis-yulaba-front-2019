@@ -1,0 +1,45 @@
+.word__wrapper.word__container {
+    max-width: 540px;
+    padding-top: 60px;
+}
+
+.word__wrapper {
+    margin: 0 auto;
+
+    .add__word {
+        color: #3597EC;
+        cursor: pointer;
+        font-family: $arial-geo;
+
+        img {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+
+    .level-1 {
+        .example__btn {
+            margin-top: 60px;
+        }
+    }
+
+
+    .example {
+        &__input {
+            border: 1px solid rgba(85, 110, 121, 0.3);
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 15px;
+            padding: 7px;
+            color: #546D78;
+        }
+
+        &__btn {
+            background: $color-red-secondary;
+            border: 1px solid $color-red-secondary;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

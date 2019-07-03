@@ -201,6 +201,20 @@
             &.active {
                 display: block;
             }
+
+
+            &-container {
+                padding-top: 37px;
+                padding-bottom: 27px;
+            
+                .btn-danger {
+                  margin: 0 auto;
+                  display: block;
+                  font-size: 15px;
+                  background: $color-red-secondary;
+                  border: 1px solid $color-red-secondary;
+              }
+            }
         }
     }
 }
