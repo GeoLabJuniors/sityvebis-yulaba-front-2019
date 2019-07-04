@@ -1,0 +1,50 @@
+.auth__container {
+    padding-top: 45px;
+}
+
+
+.myform {
+    .form-control {
+        border: 1px solid rgba(85, 110, 121, 0.3);
+
+        &:hover {
+            border: 1px solid initial;
+            box-shadow: initial;
+        }
+
+        &:focus-within {
+            border: 1px solid $color-red-secondary;
+        }
+    }
+
+    .forgetPass {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        display: block;
+    }
+
+
+    label {
+        font-size: 16px;
+        color: #546D78;
+        line-height: 28px;
+        font-family: $arial-geo;
+    }
+}
+
+
+
+
+
+
+
+.facebook__login {
+    background: #315D99;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 72px;
+    font-family: $arial-geo;
+}

@@ -15,7 +15,7 @@
             <div class="logo__container"><a class="logo" href="#">ყულაბა</a></div>
 
             <nav class="header__left__right header__middle d-flex">
-                <a class="about__project" href="#">პროექტის შესახებ</a>
+                <a class="about__project" href="/about.html">პროექტის შესახებ</a>
                 <a class="add__word d-flex align-items" href="/addword.html">დაამატე სიტყვა <img class="plus__icon" src="images/plus-icon.png" alt="plus"></a>
             </nav>
 
@@ -42,6 +42,8 @@
         </div>
     </header>
 
+
+
     <div class="word__wrapper">
         <div class="word__container">
             <div class="row">
@@ -65,14 +67,12 @@
                         <div class="correct__word">
                             <div class="correct__word-top">
                                 <h2 class="correct__word-title">გადამისამართება</h2>
-
-                                <a class="word__button share__on__fb" href="#"><span>გააზიარე</span> <span><img src="images/facebook.png" alt="facebook"></span></a>
+                                <span class="correct__word-number">3</span>
                             </div>
 
                             <div class="correct__word-middle">
 
                                 <div class="correct--word correct--main-word d-flex">
-                                    <div class="correct--word-num">3</div>
                                     <div class="correct--word-text">
                                         <span>სწორი მიმართულების მიცემა</span>
                                     </div>                        
@@ -80,61 +80,25 @@
 
                                 <div class="correct--word d-flex">
                                     <div class="correct--word-text">
-                                        <span class="example">მაგალითი (2):</span>              
-                                        <span>სწორი მიმართულების მიცემა</span>            
+                                        <span>მეშთამ გვიწოდებენ, უარზე, ეშოვნა, ფანჯარასთან ცოტამ ვთვლიდი გაჭირვებისაგან</span>            
                                     </div>
                                 </div>
                             </div>
 
                         
                             <div class="correct__word-bottom">
-                                <a href="#" class="user__who__added word__button">
+                                <a href="#" class="user__who__added">
                                     <span><img src="images/user__black.png" alt="user__photo"></span>
                                     <span>ანა შაკაია</span>
                                 </a>
 
-                                <a href="#" class="more__info word__button">
-                                    <span>დეტალურად</span>
-                                </a>
+                                <div class="more__info cursor-pointer">
+                                    <img src="images/word-share.png" alt="">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="correct__word">
-                            <div class="correct__word-top">
-                                <h2 class="correct__word-title">გადამისამართება</h2>
-
-                                <a class="word__button share__on__fb" href="#"><span>გააზიარე</span> <span><img src="images/facebook.png" alt="facebook"></span></a>
-                            </div>
-
-                            <div class="correct__word-middle">
-
-                                <div class="correct--word correct--main-word d-flex">
-                                    <div class="correct--word-num">3</div>
-                                    <div class="correct--word-text">
-                                        <span>სწორი მიმართულების მიცემა</span>
-                                    </div>                        
-                                </div>
-
-                                <div class="correct--word d-flex">
-                                    <div class="correct--word-text">
-                                        <span class="example">მაგალითი (2):</span>              
-                                        <span>სწორი მიმართულების მიცემა</span>            
-                                    </div>
-                                </div>
-                            </div>
-
-                        
-                            <div class="correct__word-bottom">
-                                <a href="#" class="user__who__added word__button">
-                                    <span><img src="images/user__black.png" alt="user__photo"></span>
-                                    <span>ანა შაკაია</span>
-                                </a>
-
-                                <a href="#" class="more__info word__button">
-                                    <span>დეტალურად</span>
-                                </a>
-                            </div>
-                        </div>
+        
                     </div>
                 </div>
 
@@ -202,106 +166,7 @@
 
 
 
-    <!-- popup -->
-    <div class="popup__container popup__close" data-popup="login__and__register">
-        <div class="popup login__popup">
-            <div class="popup__title">
-                <a class="popup__title-child tablink active" href="#tab1">შესვლა</a>
-                <span style="font-size: 22px">/</span>
-                <a class="popup__title-child tablink" href="#tab2">რეგისტრაცია</a>
-            </div>
-
-            <div id="tab1" class="myform first__form active">
-                <form>
-                    <div class="form-group flex">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="form-group flex">
-                      <label for="exampleInputPassword1">პაროლი</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-
-                    <div class="popup__bottom d-flex justify-between">
-                        <a id="forgetPass" href="#" data-id="reset">დაგავიწყდა ?</a>
-
-                        <button type="submit" class="btn-danger">შესვლა</button>
-                    </div>
-                  </form>
-
-
-                <div class="fb-auth d-flex justify-center">
-                    <a href="#" class="facebook__login">
-                        <span>Facebook-ით შესვლა</span>
-                    </a>
-                </div>
-
-                <div class="error">მითითებული მეილი რეგისტრირებულია</div>
-            </div>
-
-            <div id="tab2" class="myform second__form">
-                <form class="register__form" action="#">
-                    <div class="form-group d-flex align-items">
-                        <label>Email:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="form-group d-flex align-items">
-                        <label>სახელი:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="form-group d-flex align-items">
-                        <label>გვარი:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="form-group d-flex align-items">
-                        <label>პაროლი:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="form-group d-flex align-items">
-                        <label>გაიმეორეთ პაროლი:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="popup__bottom d-flex flex-end">    
-                        <button type="submit" class="btn-danger">რეგისტრაცია</button>
-                    </div>
-                </form>
-                <div class="error">მითითებული მეილი რეგისტრირებულია</div>
-            </div>
-        </div>
-    </div>
-
-
-        <!-- popup -->
-    <div class="popup__container popup__close forget__pass">
-        <div class="popup reset__popup" data-id="reset">
-            <div class="popup__title">
-                <h5 class="popup__title-child">პაროლის აღდგენა</h5>
-            </div>
-
-            <div class="first__form">
-                <p class="reset__popup-p">პაროლის აღსადგენად მიუთითეთ თქვენი ელ. ფოსტის მისამართი და დააწკაპუნეთ ღილაკზე „გაგზავნა“. რამდენიმე წუთში ელფოსტაზე მიიღებთ ახალი პაროლის გენერაციის ბმულს, რომლითაც აღადგენთ პაროლს და შეხვალთ სისტემაში</p>
-                
-                <form class="login__form" action="#">
-                    <div class="form-group d-flex align-items flex-end">
-                        <label>Email:</label>
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="popup__bottom d-flex flex-end">
-                        <button type="submit" class="btn-danger">გაგზავნა</button>
-                    </div>
-                </form>
-
-                <div class="error">მითითებული მეილი რეგისტრირებულია</div>
-            </div>
-        </div>
-    </div>
+   
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -5,6 +5,7 @@ html {
 body {
     position: relative;
     min-height: 100%;
+    font-size: 15px;
 }
 
 .container {
@@ -155,4 +156,16 @@ body {
     content: '';
     clear: both;
     display: table;
+}
+
+p {
+    font-family: $arial-geo;
+}
+
+.section__title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 68px;
+    color: $color-red-secondary;
+    font-family: $bpg-nino-mtavruli;
 }
