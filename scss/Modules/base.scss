@@ -79,10 +79,6 @@ body {
     height: 100% !important;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .text-left {
     text-align: left;
 }
@@ -132,10 +128,6 @@ body {
     margin-top: 48px;
 }
 
-.p-0 {
-    padding: 0 !important;
-}
-
 .m-0 {
     margin: 0 !important;
 }
@@ -168,4 +160,15 @@ p {
     margin-bottom: 68px;
     color: $color-red-secondary;
     font-family: $bpg-nino-mtavruli;
+}
+
+.error__page-p {
+    color: $color-red-secondary;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.error__page-p2 {
+    color: #768A92;
+    font-size: 25px;
 }

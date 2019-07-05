@@ -16,23 +16,6 @@ openPopup.forEach(function(click){
 
 
 
-// stop propagation all popup
-document.querySelectorAll('.popup').forEach(function(popup){
-    popup.addEventListener('click', function(e){
-        e.stopPropagation();
-    });
-});
-
-
-
-// close popups by document click
-document.addEventListener('click', function(e){
-    document.querySelectorAll('.popup__close').forEach(function(pop){
-        if(pop.classList.contains('active')){
-            pop.classList.remove('active');
-        } 
-    });
-});
 
 
 
@@ -44,46 +27,3 @@ document.getElementById('word__filter').addEventListener('click', () => {
 
 
 
-
-    // store tabs variable
-    var myTabs = document.querySelectorAll(".tablink");
-    
-    function myTabClicks(tabClickEvent) {
-            for (var i = 0; i < myTabs.length; i++) {
-                myTabs[i].classList.remove("active");
-            }
-            var clickedTab = tabClickEvent.currentTarget;
-            clickedTab.classList.add("active");
-            tabClickEvent.preventDefault();
-            var myContentPanes = document.querySelectorAll(".myform");
-
-            for (i = 0; i < myContentPanes.length; i++) {
-                myContentPanes[i].classList.remove("active");
-            }
-
-            var anchorReference = tabClickEvent.target;
-            var activePaneId = anchorReference.getAttribute("href");
-            var activePane = document.querySelector(activePaneId);
-            activePane.classList.add("active");
-        }
-
-        for (i = 0; i < myTabs.length; i++) {
-            myTabs[i].addEventListener("click", myTabClicks)
-        }
-
-
-
-
-
-        
-        let resetPass = document.getElementById('forgetPass');
-
-        resetPass.addEventListener('click', () => {
-            document.querySelectorAll('.popup').forEach(popup => {
-                popup.parentElement.classList.remove('active');
-
-                if(popup.getAttribute('data-id') === resetPass.getAttribute('data-id')){
-                    popup.parentElement.classList.add('active');
-                }
-            }); 
-        });
