@@ -1,0 +1,50 @@
+.user__page.word__container {
+    padding-top: 60px;
+}
+
+.my__words {
+    &-li {
+        @include flex($align: center, $justify: space-between);
+        padding: 12px 0;
+        border-bottom: 1px solid #546D78;
+
+        a {
+            color: $color-gray-secondary;
+            line-height: 1.3;
+            z-index: 1333;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+
+        .word__received {
+            color: #3DB39E;
+        }
+
+        .word__received.pending {
+            color: #F77834;
+        }
+    }
+
+
+    // pagination
+    .pagination {
+        margin-top: 40px;
+
+        a {
+            color: #72858D;
+            font-size: 18px;
+            margin-left: 6px;
+            font-family: $arial-geo;
+        }
+
+        &.active {
+            a {
+                color: $color-red;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
