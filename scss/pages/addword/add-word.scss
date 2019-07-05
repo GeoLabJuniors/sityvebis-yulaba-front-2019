@@ -21,10 +21,39 @@
         .level__btn {
             margin-top: 60px;
         }
+
+        .completed__level {
+            border-left: 9px solid $color-red-secondary;
+        }
+    }
+
+    .level-2 {
+        .completed__level {
+            border-left: 9px solid #367FBF;
+        }
+
+        .level__btn {
+            margin-top: 30px;
+        }
+    }
+
+    .level-3 {
+        .completed__level {
+            border-left: 9px solid #768A92;
+            align-items: flex-start;
+        }
+
+        .level__btn {
+            margin-top: 40px;
+        }
     }
 
 
+
+
     .level {
+        margin-top: 27px;
+
         &__input {
             border: 1px solid rgba(85, 110, 121, 0.3);
             border-radius: 10px;
@@ -40,6 +69,8 @@
             border: 1px solid $color-red-secondary;
             border-radius: 12px;
             display: block;
+            padding: 0px 22px;
+            padding-top: 4px;
             margin: 0 auto;
         }
     }
@@ -54,7 +85,6 @@
     .completed__level {
         border-radius: 10px;
         overflow: hidden;
-        border-left: 9px solid #DD6D7A;
         background: rgba(222, 222, 222, 0.3);
         padding: 5px 7px 5px 11px;
         margin-top: 10px;
@@ -62,6 +92,8 @@
         font-family: $arial-geo;
 
         &-left {
+            width: 94%;
+
             .add__word {
                 margin-top: 7px;
             }
@@ -73,6 +105,8 @@
         }
 
         &-right {
+            width: 6%;
+
             .x-icon {
                 margin-bottom: 7px;
             }
@@ -82,7 +116,6 @@
 
     .level-2,
     .level-3 {
-        margin-top: 30px;
 
         .radio-label {
             justify-content: flex-end;
@@ -103,21 +136,28 @@
         }
     }
 
-    .level__completed {
-        padding-left: 33px;
+    .completed__levels {
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px 0px rgba(84,109,120,0.3);
+        padding: 20px 30px 37px 30px;
+        margin-top: 45px;
     }
 
+    .added__status {
+        color: $color-red-secondary;
+        font-size: 13px;
+        padding-left: 14px;
 
-
-    .level-3 {
-        margin-left: 33px;
-
-        .completed__level {
-            align-items: flex-start;
-        }
-
-        .level__completed {
-            margin-bottom: 60px;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background: $color-red-secondary;
+            border-radius: 50%;
         }
     }
 }

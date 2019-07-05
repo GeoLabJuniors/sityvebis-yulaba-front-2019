@@ -17,17 +17,29 @@
 
             <nav class="header__left__right header__middle d-flex">
                 <a class="about__project" href="#">პროექტის შესახებ</a>
-                <a class="add__word d-flex align-items" href="/addword.html">დაამატე სიტყვა <img class="plus__icon" src="images/plus-icon.png" alt="plus"></a>
+                <a class="add__word d-flex align-items" href="/addword.html">ახალი სიტყვა <img class="plus__icon" src="images/plus-icon.svg" alt="plus"></a>
             </nav>
 
             <div class="header__left__right header__right d-flex align-items cursor-pointer h-100">
-                <img id="not__login" class="open__popup" data-popup="login__and__register" src="images/not-login.png" alt="not login">
+                <div class="user__is__login relative h-100">
+                    <div class="user d-flex align-items">
+                        <img class="polygon__img" src="./images/not-login.svg" alt="notlogin">
+                    </div>
+
+                    <div class="header__dropdown">
+                        <ul>
+                            <li><a href="#">შესვლა</a></li>
+                            <li><a href="#">რეგისტრაცია</a></li>
+                        </ul>
+                    </div>
+                </div>
+
 
                 <!-- <div class="user__is__login relative h-100">
                     <div class="user d-flex align-items">
                         <div class="user__img" style="background-image: url('images/user-photo.png')"></div>
                         <h5 class="user__title">ანა შაკაია</h5>
-                        <img class="polygon__img" src="images/Polygon.png" alt="Polygon">
+                        <img class="polygon__img" src="images/Polygon.svg" alt="Polygon">
                     </div>
 
                     <div class="header__dropdown">
@@ -48,120 +60,111 @@
         <div class="col-lg-12">
             <div class="form-group">
                 <input class="form-control my__box__shadow" type="text" placeholder="ჩაწერეთ საძიებო სიტყვა">
-                <img class="search__icon" src="images/search-icon.png" alt="search">
+                <img class="search__icon" src="images/search-icon.svg" alt="search">
             </div>
 
-            <div class="add__word d-flex align-items">ახალი სიტყვა <img src="images/plus-blue.png" alt="pllus"></div>
+            <div class="add__word d-flex align-items">ახალი სიტყვა <img src="images/plus-blue.svg" alt="pllus"></div>
 
-            <!-- level 1 -->
-            <div class="level level-1">
-                <input class="level__input" type="text" value="სიტყვა">
+            <div class="completed__levels">
+                <h5 class="added__status relative">
+                    სიტყვა დამატებულია წარმატებით
+                </h5>
 
-
-                <div class="completed__level">
-                    <div class="completed__level-left">
-                        <span>გადამისამართება</span>
-                    
-                        <div class="add__word d-flex align-items">განმარტება <img src="images/plus-blue.png" alt="pllus"></div>
-                    </div>
-
-                    <div class="completed__level-right">
-                        <img class="x-icon cursor-pointer" src="images/x-icon.png" alt="x">
-                        <img class="cursor-pointer" src="images/pencil.png" alt="edit">
-                    </div>
-                </div>
-
-                <button class="btn btn-danger level__btn">შენახვა</button>
-            </div>
-
-
-            <!-- level 2 -->
-            <div class="level level-2">
-                <input class="level__input" type="text" placeholder="დაამატე განმარტება">
-
-                <div class="level-2-checkbox">
-                    <div class="form-check radio">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4">
-                        <label class="form-check-label radio-label" for="exampleRadios4">
-                            მთავარი
-                        </label>
-                    </div>
-
-                    <div class="form-check radio">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5">
-                        <label class="form-check-label radio-label" for="exampleRadios5">
-                            აქტიური
-                        </label>
-                    </div>
-                </div>
-                
-
-                <div class="level__completed">
+                <!-- level 1 -->
+                <div class="level level-1">
+                    <input class="level__input" type="text" value="სიტყვა">
                     <div class="completed__level">
                         <div class="completed__level-left">
-                            <span>სწორი მიმართულების მიცემა</span>
+                            <span>გადამისამართება</span>
                         
-                            <div class="add__word d-flex align-items">მაგალითი <img src="images/plus-blue.png" alt="pllus"></div>
+                            <div class="add__word d-flex align-items">განმარტება <img src="images/plus-blue.svg" alt="pllus"></div>
                         </div>
-    
+
                         <div class="completed__level-right">
-                            <img class="x-icon cursor-pointer" src="images/x-icon.png" alt="x">
-                            <img class="cursor-pointer" src="images/pencil.png" alt="edit">
+                            <img class="x-icon cursor-pointer" src="images/x-icon.svg" alt="x">
+                            <img class="cursor-pointer" src="images/pencil.svg" alt="edit">
                         </div>
                     </div>
+
+                    <button class="btn btn-danger level__btn">შენახვა</button>
                 </div>
 
+                <!-- level 2 -->
+                <div class="level level-2">
+                    <input class="level__input" type="text" placeholder="დაამატე განმარტება">
 
-                
+                    <div class="level-2-checkbox">
+                        <div class="form-check radio">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4">
+                            <label class="form-check-label radio-label" for="exampleRadios4">
+                                მთავარი
+                            </label>
+                        </div>
 
-                <button class="btn btn-danger level__btn">შენახვა</button>
+                        <div class="form-check radio">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5">
+                            <label class="form-check-label radio-label" for="exampleRadios5">
+                                აქტიური
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="level__completed">
+                        <div class="completed__level">
+                            <div class="completed__level-left">
+                                <span>სწორი მიმართულების მიცემა</span>
+                            
+                                <div class="add__word d-flex align-items">მაგალითი <img src="images/plus-blue.svg" alt="pllus"></div>
+                            </div>
+        
+                            <div class="completed__level-right">
+                                <img class="x-icon cursor-pointer" src="images/x-icon.svg" alt="x">
+                                <img class="cursor-pointer" src="images/pencil.svg" alt="edit">
+                            </div>
+                        </div>
+                    </div>   
+
+                    <button class="btn btn-danger level__btn">შენახვა</button>
+                </div>
+
+                <!-- level 3 -->
+                <div class="level level-3">
+                    <input class="level__input" type="text" placeholder="მოიყვანეთ წინადადებაში გამოყენების მაგალითი…">
+
+                    <div class="level-2-checkbox">
+                        <div class="form-check radio">
+                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios6">
+                            <label class="form-check-label radio-label" for="exampleRadios6">
+                                მთავარი
+                            </label>
+                        </div>
+
+                        <div class="form-check radio">
+                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios7">
+                            <label class="form-check-label radio-label" for="exampleRadios7">
+                                აქტიური
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="level__completed">
+                        <div class="completed__level">
+                            <div class="completed__level-left">
+                                <span>მოიყვანეთ წინადადებაში გამოყენების მაგალითი…</span>
+                            </div>
+        
+                            <div class="completed__level-right">
+                                <img class="x-icon cursor-pointer" src="images/x-icon.svg" alt="x">
+                                <img class="cursor-pointer" src="images/pencil.svg" alt="edit">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-danger level__btn">შენახვა</button>
+                </div>
             </div>
-
-
-
-
-            <!-- level 3 -->
-            <div class="level level-3">
-                <input class="level__input" type="text" placeholder="მოიყვანეთ წინადადებაში გამოყენების მაგალითი…">
-
-                <div class="level-2-checkbox">
-                    <div class="form-check radio">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios6">
-                        <label class="form-check-label radio-label" for="exampleRadios6">
-                            მთავარი
-                        </label>
-                    </div>
-
-                    <div class="form-check radio">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios7">
-                        <label class="form-check-label radio-label" for="exampleRadios7">
-                            აქტიური
-                        </label>
-                    </div>
-                </div>
-                
-
-                <div class="level__completed">
-                    <div class="completed__level">
-                        <div class="completed__level-left">
-                            <span>მოიყვანეთ წინადადებაში გამოყენების მაგალითი…</span>
-                        </div>
-    
-                        <div class="completed__level-right">
-                            <img class="x-icon cursor-pointer" src="images/x-icon.png" alt="x">
-                            <img class="cursor-pointer" src="images/pencil.png" alt="edit">
-                        </div>
-                    </div>
-                </div>
-
-
-                
-
-                <button class="btn btn-danger level__btn">შენახვა</button>
-            </div>
-
-
-
         </div>
     </div>
 
@@ -170,18 +173,18 @@
     <footer class="footer">
         <div class="container d-flex justify-between align-items h-100">
             <div class="footer__left d-flex justify-center column align-items">
-                <img src="images/handphone.png" alt="handphone">
+                <img src="images/handphone.svg" alt="handphone">
                 <span class="footer__text">0322222222</span>
             </div>
 
             <div class="social__icons footer__left d-flex">
-                <img class="cursor-pointer" src="images/twitter.png" alt="twitter">
-                <img class="cursor-pointer" src="images/facebook.png" alt="facebook">
-                <img class="cursor-pointer" src="images/instagram.png" alt="instagram">
+                <img class="cursor-pointer" src="./images/twitter.svg" alt="twitter">
+                <img class="cursor-pointer" src="./images/facebook.svg" alt="facebook">
+                <img class="cursor-pointer" src="./images/instagram.svg" alt="instagram">
             </div>
 
             <div class="footer__left d-flex justify-center column align-items">
-                <img src="images/envelope.png" alt="envelope">
+                <img src="images/envelope.svg" alt="envelope">
                 <span class="footer__text">yulaba@gmail.com</span>
             </div>
         </div>

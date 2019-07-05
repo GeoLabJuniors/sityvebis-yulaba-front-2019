@@ -172,3 +172,10 @@ p {
     color: #768A92;
     font-size: 25px;
 }
+
+.error__page {
+    height: calc(100vh - 180px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
