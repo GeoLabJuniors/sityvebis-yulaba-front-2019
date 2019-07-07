@@ -144,18 +144,31 @@
             .user__who__added {
                 display: flex;
                 align-items: center;
-                color: #546D78;
                 font-family: $bpg-nino-mtavruli;
 
-                img {
-                    width: 23px;
-                    margin-bottom: 4px;
+                .username {
+                    margin-top: 7px;
+                    color: #546D78;
+                }
+
+                .user_img {
+                    width: 20px;
+                    height: 13px;
+                    background-position: center;
                 }
             }
 
             .more__info {
                 width: 28px;
                 height: 28px;
+                
+                span {
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    background-size: cover;
+                }
+
             }
         }
 
