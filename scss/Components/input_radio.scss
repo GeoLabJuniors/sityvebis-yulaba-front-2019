@@ -2,11 +2,13 @@ $color1: #707070;
 $color2: #E03348;
 
 
-.radio {
+.radio,
+.checkbox {
   padding: 0px 20px 22px 15px;
 
   
-  input[type="radio"] {
+  input[type="radio"],
+  input[type="checkbox"]  {
     position: absolute;
     opacity: 0;
 
