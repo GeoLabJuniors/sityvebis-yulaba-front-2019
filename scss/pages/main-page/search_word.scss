@@ -103,7 +103,7 @@
                     display: inline-block;
                     vertical-align: middle;
                     color: #546D78;
-    
+
                     &:nth-child(2){
                         width: 5px;
                         margin-left: 5px;
@@ -122,11 +122,11 @@
 
                 &-text {
                     font-size: 14px;
+                    cursor: default;
                     font-family: $arial-geo;
                     
-                   span:not(.example):hover {
+                    span:not(.example):hover {
                         color: $color-red;
-                        cursor: pointer;
                     }
                 }
             }
@@ -171,7 +171,6 @@
 
             }
         }
-
         .word__button {
             font-size: 10px;
             padding: 5px 14px;
@@ -193,47 +192,16 @@
             font-family: $arial-geo;
         }
     }
-
-    // right
-    .word__right {
-        padding-right: 34px;
-
-        .word__filter {
-            text-align: center;
-            color: $color-gray-secondary;
-            line-height: 50px;
-            cursor: pointer;
-
-            &.active {
-                box-shadow: 0px 0px 10px 0px rgba(199, 71, 71, 0.3);
-            }
-        }
-
-        .filter__dropdown {
-            margin-top: 10px;
-            border-radius: 12px;
-            box-shadow: 0px 0px 10px 0px rgba(84, 109, 120, 0.15);
-            display: none;
-
-            &.active {
-                display: block;
-            }
+}
 
 
-            &-container {
-                padding-top: 37px;
-                padding-bottom: 27px;
-            
-                .btn-danger {
-                  margin: 0 auto;
-                  display: block;
-                  font-size: 15px;
-                  padding: 0px 15px;
-                  padding-top: 4px;
-                  background: $color-red-secondary;
-                  border: 1px solid $color-red-secondary;
-              }
-            }
-        }
+.word__left {
+    .search__word-btn {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: transparent;
+        outline: none;
     }
 }

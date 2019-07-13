@@ -179,3 +179,12 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.word__container .pagination {
+    li.active a {
+        color: #fff;
+        background: #e03348 !important; 
+        border: 1px solid #e03348 !important;
+    }
+
+}
