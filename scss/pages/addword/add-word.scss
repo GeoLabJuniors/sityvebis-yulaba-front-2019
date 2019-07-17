@@ -22,6 +22,11 @@
             margin-top: 60px;
         }
 
+        .checkbox {
+            justify-content: flex-end !important;
+            margin-top: 10px;
+        }
+
         .completed__level {
             border-left: 9px solid $color-red-secondary;
         }
