@@ -15,10 +15,6 @@ openPopup.forEach(function(click){
 
 
 
-
-
-
-
 document.getElementById('word__filter').addEventListener('click', () => {
     document.getElementById('word__filter').classList.toggle('active');
 
@@ -26,4 +22,10 @@ document.getElementById('word__filter').addEventListener('click', () => {
 })
 
 
+
+$('.az input').change(function() {    
+    if($(this)[0].checked == true){
+        $(this).parent().addClass('active');
+    }
+});
 

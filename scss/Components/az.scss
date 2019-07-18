@@ -1,0 +1,25 @@
+.az {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: $color-red;
+    background: #FEFEFE;
+    border-bottom: 1px solid #94b3dc;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+    label {
+        padding: 2px 6px;
+    }
+    
+    .hr {
+        width: 12px;
+        height: 2px;
+        background: $color-red;
+    }
+}
+
+.az label {
+    cursor: pointer;
+}
