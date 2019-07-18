@@ -26,6 +26,10 @@ document.getElementById('word__filter').addEventListener('click', () => {
 $('.az input').change(function() {    
     if($(this)[0].checked == true){
         $(this).parent().addClass('active');
+        $(this).parent().prevAll().removeClass('active');
+        $(this).parent().nextAll().removeClass('active');
     }
 });
+
+
 
