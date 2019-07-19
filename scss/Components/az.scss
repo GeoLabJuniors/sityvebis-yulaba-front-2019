@@ -14,7 +14,7 @@
     }
 
     label {
-        padding: 2px 6px;
+        padding: 2px 4px;
 
         &.active {
             .hr {
@@ -26,6 +26,7 @@
     .hr {
         width: 15px;
         height: 2px;
+        margin: 0 auto;
         margin-top: 5px;
         background: $color-red;
         display: none;
