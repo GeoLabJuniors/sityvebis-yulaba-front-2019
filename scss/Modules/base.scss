@@ -181,6 +181,14 @@ p {
     font-size: 25px;
 }
 
+.main__explanation {
+    border: 3px solid #367FBF;
+}
+
+.main__example {
+    border: 3px solid #768A92;
+}
+
 .error__page {
     height: calc(100vh - 180px);
     flex-direction: column;
