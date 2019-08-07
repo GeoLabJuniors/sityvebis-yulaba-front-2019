@@ -31,6 +31,10 @@
         .completed__level {
             border-left: 9px solid $color-red-secondary;
         }
+
+        .isActive__child {
+            border: 1px solid $color-red;
+        }
     }
 
     .level-2 {
@@ -40,6 +44,10 @@
 
         .level__btn {
             margin-top: 30px;
+        }
+
+        .isActive__child {
+            border: 1px solid #367FBF;
         }
     }
 
@@ -52,6 +60,11 @@
         .level__btn {
             margin-top: 30px;
         }
+        
+        .isActive__child {
+            border: 1px solid #768A92;
+        }
+        
     }
 
 
@@ -100,11 +113,17 @@
     .completed__level {
         position: relative;
         border-radius: 10px;
-        background: rgba(222, 222, 222, 0.3);
+        background: #fff;
         padding: 5px 7px 5px 11px;
         margin-top: 10px;
+        box-shadow: 0 0 10px rgba(145, 160, 166, 0.3);
         @include flex($justify: space-between, $align: center);
         font-family: $arial-geo;
+
+        &.is_disabled {
+            background: #F4F4F4;
+            box-shadow: initial;
+        }
 
         &-left {
             width: 94%;
@@ -210,8 +229,6 @@
     transform: translateY(-50%);
 
     &__child {
-        border-left: 3px solid #DD6D7A;
-        border-right: 3px solid #DD6D7A;
         -webkit-border-radius: 10px;
         border-radius: 10px;
         width: 36px;
@@ -219,10 +236,9 @@
         justify-content: center;
         padding: 5px 0;
     
-        &.isActive__child {
-            border-left: 3px solid #367FBF;
-            border-right: 3px solid #367FBF;
-        }
+        // &.isActive__child {
+
+        // }
     
         button {
             background: transparent;
