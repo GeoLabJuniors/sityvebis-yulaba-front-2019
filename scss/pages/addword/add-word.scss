@@ -18,6 +18,14 @@
         }
     }
 
+    .level {
+        .isActive__child {
+            button {
+                width: 20px;
+            }
+        }
+    }
+
     .level-1 {
         .level__btn {
             margin-top: 50px;
@@ -236,9 +244,9 @@
         justify-content: center;
         padding: 5px 0;
     
-        // &.isActive__child {
-
-        // }
+        .is_checked {
+            padding-left: 3px;
+        }
     
         button {
             background: transparent;
