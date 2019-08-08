@@ -3,15 +3,38 @@
 }
 
 .my__words {
+    &-ul {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
     &-li {
         @include flex($align: center, $justify: space-between);
-        padding: 12px 0;
-        border-bottom: 1px solid #546D78;
+        padding: 9px 15px;
+
+        &:nth-child(odd) {
+            background: #F5F5F5;
+        }
+
 
         a {
-            color: $color-gray-secondary;
+            color: #3DB39E;
             line-height: 1.3;
             z-index: 1333;
+            position: relative;
+
+            &:not(.pending) {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: -20px;
+                    background-image: url('../images/check-mark.svg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 14px;
+                    height: 15px;
+                }
+            }
 
             &:hover {
                 color: $color-red;
@@ -22,27 +45,51 @@
             color: #3DB39E;
         }
 
-        .word__received.pending {
+        .pending {
             color: #F77834;
         }
     }
 
+    &-icon {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
 
-    // pagination
+        &:nth-child(1) {
+            margin-right: 12px;
+        }
+    }
+
+    .pending {
+        a {
+            color: #FD8F25;
+        }
+    }
+    
+
+
+    // pagination   
     .pagination {
-        margin-top: 40px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+
+        &.active {
+            background: #DD6D7A;
+        }
 
         a {
-            color: #72858D;
+            color: #DD6D7A;
             font-size: 18px;
-            margin-left: 6px;
-            font-family: $arial-geo;
+            font-family: "Arial GEO";
         }
 
         &.active {
             a {
-                color: $color-red;
-                text-decoration: underline;
+                color: #fff;
             }
         }
     }

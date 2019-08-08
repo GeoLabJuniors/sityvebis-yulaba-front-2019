@@ -109,6 +109,10 @@
                 margin-right: 20px;
             }
         }
+
+        button {
+            outline: none;
+        }
     }
 
     .level-2 {
@@ -232,7 +236,7 @@
 
 .isActive {
     position: absolute;
-    left: -67px;
+    left: -63px;
     top: 53%;
     transform: translateY(-50%);
 
